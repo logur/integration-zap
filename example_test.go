@@ -1,7 +1,7 @@
 package zap_test
 
 import (
-	"github.com/goph/logur"
+	"logur.dev/logur"
 
 	zapintegration "logur.dev/integration/zap"
 )

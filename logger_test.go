@@ -3,10 +3,10 @@ package zap
 import (
 	"testing"
 
-	"github.com/goph/logur"
-	"github.com/goph/logur/logtesting"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
+	"logur.dev/logur"
+	"logur.dev/logur/logtesting"
 )
 
 func TestWith(t *testing.T) {

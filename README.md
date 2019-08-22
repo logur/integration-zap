@@ -21,7 +21,7 @@ go get logur.dev/integration/zap
 package main
 
 import (
-	"github.com/goph/logur"
+	"logur.dev/logur"
 	zapintegration "logur.dev/integration/zap"
 )
 

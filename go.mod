@@ -1,4 +1,4 @@
-module logur.dev/integration/template
+module logur.dev/integration/zap
 
 go 1.12
 

@@ -1,17 +1,17 @@
-# Logur integration for TEMPLATE
+# Logur integration for Uber's [Zap](https://github.com/uber-go/zap)
 
-[![CircleCI](https://circleci.com/gh/logur/integration-template.svg?style=svg)](https://circleci.com/gh/logur/integration-template)
-[![Coverage](https://gocover.io/_badge/logur.dev/integration/template)](https://gocover.io/logur.dev/integration/template)
-[![Go Report Card](https://goreportcard.com/badge/logur.dev/integration/template?style=flat-square)](https://goreportcard.com/report/logur.dev/integration/template)
-[![GolangCI](https://golangci.com/badges/github.com/logur/integration-template.svg)](https://golangci.com/r/github.com/logur/integration-template)
-[![Go Version](https://img.shields.io/badge/go%20version-%3E=1.11-61CFDD.svg?style=flat-square)](https://github.com/logur/integration-template)
-[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://godoc.org/logur.dev/integration/template)
+[![CircleCI](https://circleci.com/gh/logur/integration-zap.svg?style=svg)](https://circleci.com/gh/logur/integration-zap)
+[![Coverage](https://gocover.io/_badge/logur.dev/integration/zap)](https://gocover.io/logur.dev/integration/zap)
+[![Go Report Card](https://goreportcard.com/badge/logur.dev/integration/zap?style=flat-square)](https://goreportcard.com/report/logur.dev/integration/zap)
+[![GolangCI](https://golangci.com/badges/github.com/logur/integration-zap.svg)](https://golangci.com/r/github.com/logur/integration-zap)
+[![Go Version](https://img.shields.io/badge/go%20version-%3E=1.11-61CFDD.svg?style=flat-square)](https://github.com/logur/integration-zap)
+[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://godoc.org/logur.dev/integration/zap)
 
 
 ## Installation
 
 ```bash
-go get logur.dev/integration/template
+go get logur.dev/integration/zap
 ```
 
 
@@ -22,11 +22,11 @@ package main
 
 import (
 	"github.com/goph/logur"
-	templateintegration "logur.dev/integration/template"
+	zapintegration "logur.dev/integration/zap"
 )
 
 func main() {
-	logger := templateintegration.New(logur.NewNoopLogger())
+	logger := zapintegration.New(logur.NewNoopLogger())
 }
 ```
 

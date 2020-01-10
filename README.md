@@ -1,7 +1,7 @@
 # Logur integration for Uber's [Zap](https://github.com/uber-go/zap)
 
-[![CircleCI](https://circleci.com/gh/logur/integration-zap.svg?style=svg)](https://circleci.com/gh/logur/integration-zap)
-[![Coverage](https://gocover.io/_badge/logur.dev/integration/zap)](https://gocover.io/logur.dev/integration/zap)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/logur/integration-zap/CI?style=flat-square)
+[![Codecov](https://img.shields.io/codecov/c/github/logur/integration-zap?style=flat-square)](https://codecov.io/gh/logur/integration-zap)
 [![Go Report Card](https://goreportcard.com/badge/logur.dev/integration/zap?style=flat-square)](https://goreportcard.com/report/logur.dev/integration/zap)
 [![GolangCI](https://golangci.com/badges/github.com/logur/integration-zap.svg)](https://golangci.com/r/github.com/logur/integration-zap)
 [![Go Version](https://img.shields.io/badge/go%20version-%3E=1.11-61CFDD.svg?style=flat-square)](https://github.com/logur/integration-zap)
@@ -35,7 +35,7 @@ func main() {
 
 When all coding and testing is done, please run the test suite:
 
-``` bash
+```bash
 $ make check
 ```
 

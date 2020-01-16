@@ -7,7 +7,7 @@ import (
 )
 
 func ExampleNew() {
-	logger := zapintegration.New(logur.NewNoopLogger())
+	logger := zapintegration.New(logur.NoopLogger{})
 
 	// Output:
 	_ = logger

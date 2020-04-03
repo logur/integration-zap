@@ -10,7 +10,7 @@ import (
 )
 
 func TestWith(t *testing.T) {
-	logger := logur.NewTestLogger()
+	logger := &logur.TestLogger{}
 	log := New(logger)
 	log.With(zap.String("foo", "bar")).Info("hello", zap.String("baz", "quux"))
 
@@ -29,7 +29,7 @@ func TestWith(t *testing.T) {
 func TestLogger(t *testing.T) {
 	const msg = "hello"
 
-	logger := logur.NewTestLogger()
+	logger := &logur.TestLogger{}
 	log := New(logger)
 
 	tests := []struct {

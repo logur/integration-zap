@@ -44,6 +44,7 @@ func (z *zapper) Enabled(lvl zapcore.Level) bool {
 
 func (z *zapper) With(fs []zapcore.Field) zapcore.Core {
 	me := zapcore.NewMapObjectEncoder()
+
 	for _, f := range fs {
 		f.AddTo(me)
 	}
@@ -61,11 +62,13 @@ func (z *zapper) Check(ent zapcore.Entry, ce *zapcore.CheckedEntry) *zapcore.Che
 
 func (z *zapper) Write(ent zapcore.Entry, fs []zapcore.Field) error {
 	me := zapcore.NewMapObjectEncoder()
+
 	for _, f := range fs {
 		f.AddTo(me)
 	}
 
 	var logFunc func(string, ...map[string]interface{})
+
 	switch ent.Level {
 	case zapcore.DebugLevel:
 		logFunc = z.logger.Debug
